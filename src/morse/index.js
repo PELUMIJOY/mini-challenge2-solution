@@ -57,34 +57,6 @@ const MORSE_CODE = {
 };
 
 Object.freeze(MORSE_CODE);
-
-// function morse(text) {
-//   while(text[0] == " " || text[text.length -1 ] == " ") {
-//     text = text.trim()
-//   }
-//   if(MORSE_CODE[text]) return MORSE_CODE[text];
-//   let codeKey = "";
-//   let decodeStr = "";
-//   for(let i=0;i<text.length;i++) {
-//     if(text[i] != " ") {
-//       codeKey += text[i]; // same as codeKey = codeKey + text[i];
-//     }else if(text[i] == " "){
-//       if(codeKey != " ") {
-        
-//       }else decodeStr += decodeStr[decodeStr.length -1] != " " ? " ": "";
-//       if(!MORSE_CODE[codeKey]) return "Please provide a morse string"
-//       decodeStr += MORSE_CODE[codeKey] ? 
-//                    MORSE_CODE[codeKey] : 
-//                    decodeStr[decodeStr.length-1] != " " ? " ": "" ;
-//       codeKey = "";
-//     }else {
-
-//     }
-    
-//   }
-//   decodeStr += codeKey != "" && MORSE_CODE[codeKey] ? MORSE_CODE[codeKey] : "" ;
-//   return decodeStr.trim();
-// }
 function morse(text) {
   if (typeof text != "string" || text == null)
     throw "Please provide a morse string";
